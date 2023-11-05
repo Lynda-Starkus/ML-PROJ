@@ -1,5 +1,6 @@
 import streamlit as st
 import pandas as pd
+from ydata_profiling import ProfileReport
 from streamlit_pandas_profiling import st_profile_report
 import os 
 
@@ -21,7 +22,7 @@ if choice == "Upload":
 
 if choice == "Analyse des données": 
     st.title("Etude exploratoire")
-    profile_df = df.profile_report()
+    profile_df = ProfileReport(df)
     st_profile_report(profile_df)
 
 if choice == "Modèlisation automatique": 
