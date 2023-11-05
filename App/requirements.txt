@@ -1,0 +1,11 @@
+numpy
+pandas 
+matplotlib
+plotly
+seaborn
+scikit-learn
+pandas_profiling
+streamlit
+xgboost
+streamlit-pandas-profiling
+-U --pre pycaret
